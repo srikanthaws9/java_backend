@@ -17,7 +17,7 @@ data "aws_ami" "aws_ami_web" {
     version   = "latest"
     apptype = "web"
     os = "Linux"
-    owner = "JohnDixon"
+    owner = "SachinTendulkar"
   }
 }
 
