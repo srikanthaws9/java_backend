@@ -3,7 +3,8 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "my-unique-bucket-name"  # Change this to a globally unique name
+  bucket = "my-unique-bucket-name-dev"  # Change this to a globally unique name
+
 }
 
 resource "aws_s3_bucket_acl" "my_bucket_acl" {
