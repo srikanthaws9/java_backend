@@ -17,6 +17,7 @@ data "aws_ami" "aws_ami_web" {
     version   = "latest"
     apptype = "web"
     os = "Linux"
+
   }
 }
 
@@ -42,5 +43,9 @@ resource "aws_s3_bucket" "s3_bucket" {
         Environment = local.Env
         ProjectOwner = local.prodj_owner
         BillingId = local.BillingId
+        Owner = "John Dixon"
+        mail = "fsk.support@example.com"
     }
 }
+
+
