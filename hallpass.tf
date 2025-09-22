@@ -43,5 +43,7 @@ resource "aws_s3_bucket" "s3_bucket" {
         Environment = local.Env
         ProjectOwner = local.prodj_owner
         BillingId = local.BillingId
+        Owner = "John Dixon"
+        mail = "fsk.support@example.com"
     }
 }
