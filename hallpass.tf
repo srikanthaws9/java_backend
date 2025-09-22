@@ -17,7 +17,7 @@ data "aws_ami" "aws_ami_web" {
     version   = "latest"
     apptype = "web"
     os = "Linux"
-    owner = "SachinTendulkar"
+
   }
 }
 
@@ -47,3 +47,5 @@ resource "aws_s3_bucket" "s3_bucket" {
         mail = "fsk.support@example.com"
     }
 }
+
+
